@@ -49,18 +49,27 @@ const quotes = [
     { quote: "Success usually comes to those who are too busy to be looking for it.", author: "Henry David Thoreau" }
 ];
  
+let currentIndex = 0;
 // Function to generate a random quote
 function getRandomQuote() {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    const selectedQuote = quotes[randomIndex];
-
+    // Get the current quote based on the currentIndex
+    const selectedQuote = quotes[currentIndex];
+    
+    // Display the quote and author
     quoteEl.innerText = `"${selectedQuote.quote}"`;
     authorEl.innerText = `~ ${selectedQuote.author}`;
+    
+    // Increment the index to show the next quote
+    currentIndex++;
+    
+    // If we've reached the end of the quotes array, reset to the beginning
+    if (currentIndex === quotes.length) {
+        currentIndex = 0;
+    }
 }
-
 // Event listener for the button click
 btnEl.addEventListener("click", getRandomQuote);
-// console.log(quotes.length);
+console.log(quotes.length);
 
 
 // Fetch the first quote when the page loads
