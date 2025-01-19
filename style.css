@@ -5,12 +5,14 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Courier New", Courier, monospace;
-    background: linear-gradient(to left bottom, lightgreen, lightblue);
+    /* background: linear-gradient(to left bottom, lightgreen, lightblue); */
+    background: linear-gradient(to right,#f42dc8,#1593cb);
 }
 
 .container {
     background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     padding: 30px;
     border-radius: 15px;
     width: 90%;
@@ -40,15 +42,18 @@ body {
     cursor: pointer;
     padding: 10px;
     margin-top: 15px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgb(233, 156, 207);
     border-color: rgba(255, 255, 255, 0.6);
     text-transform: uppercase;
     width: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
+    transition: all 300ms ease-in-out;
 }
 
 .btn:hover {
-    background-color: rgba(255, 255, 255, 0.6);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    background-color: rgba(140, 149, 243, 0.922);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     transition: all 300ms ease-in-out;
-    color: green;
+    color: white;
 }
